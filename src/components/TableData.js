@@ -1,4 +1,4 @@
-const tableData = [
+const mainQuest = [
   {
     quest: 'Unbound',
     description: 'Escape Imperial custody and a dragon raid.',
@@ -72,42 +72,47 @@ const tableData = [
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'Alduins Bane',
+    description: 'Exploit the Time Wound to learn Dragonrend.',
+    giver: 'Paarthurnax',
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'The Fallen',
+    description: 'Capture and interrogate one of Alduins allies.',
+    giver: '"Paarthurnax, Arngeir, Esbern"',
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'Paarthurnax (optional)',
+    description: 'Deal with a potential threat.',
+    giver: '',
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'Season Unending (optional)',
+    description: 'Enforce a ceasefire to secure Dragonsreach.',
+    giver: '',
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'The World-Eaters Eyrie',
+    description: 'Battle through Skuldafn Temple to reach Alduins portal to Sovngarde.',
+    giver: '',
     selected: false,
   },
   {
-    quest: 'The Throat of the World',
-    description: 'Receive a lesson from Paarthurnax.',
-    giver: 'Arngeir',
+    quest: 'Sovngarde',
+    description: 'Seek out Alduin within Sovngarde.',
+    giver: '',
     selected: false,
   },
-
+  {
+    quest: 'Dragonslayer',
+    description: 'Put an end to the World Eater.',
+    giver: '',
+    selected: false,
+  }
 ];
 
-export default tableData
+export default mainQuest

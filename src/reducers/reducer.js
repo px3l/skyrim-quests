@@ -2,16 +2,16 @@ import update from 'react/lib/update'
 import * as actions from '../actions/actions'
 
 const initialState = {
-  fixedHeader: true,
-  fixedFooter: true,
-  stripedRows: false,
-  showRowHover: false,
-  selectable: true,
-  multiSelectable: true,
-  enableSelectAll: false,
-  deselectOnClickaway: true,
-  showCheckboxes: true,
-  height: '300px',
+  config: {
+    fixedHeader: true,
+    fixedFooter: true,
+    stripedRows: false,
+    selectable: true,
+    multiSelectable: true,
+    deselectOnClickaway: true,
+    showCheckboxes: true,
+  },
+  done: false  
 }
 
 export default function reducer(state = initialState, action = {}) {

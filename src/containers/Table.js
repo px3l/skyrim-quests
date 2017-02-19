@@ -15,6 +15,8 @@ class Table extends Component {
 
 function mapStateToProps(state) {
   return {
+    config: state.reducer.config,
+    done: state.reducer.done
   }
 }
 
