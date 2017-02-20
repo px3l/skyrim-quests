@@ -1,12 +1,12 @@
-export const BUTTON_COUNT = 'BUTTON_COUNT'
+export const ROW_CHECK = 'ROW_CHECK'
 
-export function buttonCount() {
+export function rowCheck() {
 
 	console.log("-------------------------------")
 	console.log("THE ACTION IS RUN")
 
   return {
-  	type: BUTTON_COUNT
+  	type: ROW_CHECK
   }
 
 }

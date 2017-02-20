@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import MainQuestTableComponent from '../components/MainQuestTable'
 
+import * as actions from '../actions/actions'
+
 class Table extends Component {
   render() {
     var props = this.props
@@ -15,13 +17,14 @@ class Table extends Component {
 
 function mapStateToProps(state) {
   return {
-    config: state.reducer.config,
-    done: state.reducer.done
-  }
+    config: state.reducer.config  }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
+    selected: () => {
+      dispatch(actions.rowCheck())
+    }
   }
 }
 

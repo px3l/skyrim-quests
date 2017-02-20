@@ -4,7 +4,7 @@ import {Table, TableBody, TableFooter, TableHeader, TableHeaderColumn, TableRow,
 import TextField from 'material-ui/TextField';
 import Toggle from 'material-ui/Toggle';
 
-import tableData from './TableData'
+import tableData from '../TableData'
 
 export default class MainQuestTable extends React.Component {
 
@@ -25,7 +25,6 @@ export default class MainQuestTable extends React.Component {
               <TableHeaderColumn tooltip="The quest name">Quest</TableHeaderColumn>
               <TableHeaderColumn tooltip="The quest details">Description</TableHeaderColumn>
               <TableHeaderColumn tooltip="Who gives you the quest">Giver</TableHeaderColumn>
-              <TableHeaderColumn tooltip="Is it completed?">Status</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -35,7 +34,6 @@ export default class MainQuestTable extends React.Component {
                 <TableRowColumn>{row.quest}</TableRowColumn>
                 <TableRowColumn>{row.description}</TableRowColumn>
                 <TableRowColumn>{row.giver}</TableRowColumn>
-                <TableRowColumn>{row.status}</TableRowColumn>
               </TableRow>
               ))}
           </TableBody>
