@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
-import TableComponent from '../components/Table'
+import MainQuestTableComponent from '../components/MainQuestTable'
 
 class Table extends Component {
   render() {
     var props = this.props
 
     return (
-      <TableComponent {...props} />
+      <MainQuestTableComponent {...props} />
     )
   }
 }
