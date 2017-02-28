@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react'
+
 import {Table, TableBody, TableFooter, TableHeader, TableHeaderColumn, TableRow, TableRowColumn}
   from 'material-ui/Table';
 import TextField from 'material-ui/TextField';
@@ -6,7 +7,7 @@ import Toggle from 'material-ui/Toggle';
 
 import tableData from '../TableData'
 
-export default class MainQuestTable extends React.Component {
+class MainQuestTableComponent extends Component {
 
   render() {
     var props = this.props
@@ -25,6 +26,7 @@ export default class MainQuestTable extends React.Component {
               <TableHeaderColumn tooltip="The quest name">Quest</TableHeaderColumn>
               <TableHeaderColumn tooltip="The quest details">Description</TableHeaderColumn>
               <TableHeaderColumn tooltip="Who gives you the quest">Giver</TableHeaderColumn>
+              <TableHeaderColumn tooltip="Required or optional?">Optional?</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -34,6 +36,7 @@ export default class MainQuestTable extends React.Component {
                 <TableRowColumn>{row.quest}</TableRowColumn>
                 <TableRowColumn>{row.description}</TableRowColumn>
                 <TableRowColumn>{row.giver}</TableRowColumn>
+                <TableRowColumn>{row.optional}</TableRowColumn>
               </TableRow>
               ))}
           </TableBody>
@@ -42,3 +45,9 @@ export default class MainQuestTable extends React.Component {
     );
   }
 }
+
+MainQuestTableComponent.propTypes = {
+  
+}
+
+export default MainQuestTableComponent
