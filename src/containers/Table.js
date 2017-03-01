@@ -17,14 +17,11 @@ class Table extends Component {
 
 function mapStateToProps(state) {
   return {
-    config: state.reducer.config
+  }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    selected: () => {
-      dispatch(actions.rowCheck())
-    }
   }
 }
 

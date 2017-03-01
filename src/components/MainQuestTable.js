@@ -14,10 +14,10 @@ class MainQuestTableComponent extends Component {
 
     return (
       <div>
-        <Table multiSelectable={props.config.multiSelectable}>
+        <Table multiSelectable={true}>
           <TableHeader>
             <TableRow>
-              <TableHeaderColumn colSpan={props.config.colSpan} style={{textAlign: 'center'}}>
+              <TableHeaderColumn colSpan={5} style={{textAlign: 'center'}}>
                 Main Quest
               </TableHeaderColumn>
             </TableRow>
