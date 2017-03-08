@@ -14,22 +14,24 @@ class MainQuestTableComponent extends Component {
 
     return (
       <div>
-        <Table multiSelectable={true}>
-          <TableHeader>
+        <Table multiSelectable={true} style={{tableLayout: 'auto'}}>
+
+          <TableHeader >
             <TableRow>
               <TableHeaderColumn colSpan={5} style={{textAlign: 'center'}}>
                 Main Quest
               </TableHeaderColumn>
             </TableRow>
-            <TableRow>
-              <TableHeaderColumn>ID</TableHeaderColumn>
-              <TableHeaderColumn tooltip="The quest name">Quest</TableHeaderColumn>
-              <TableHeaderColumn tooltip="The quest details">Description</TableHeaderColumn>
-              <TableHeaderColumn tooltip="Who gives you the quest">Giver</TableHeaderColumn>
-              <TableHeaderColumn tooltip="Required or optional?">Optional?</TableHeaderColumn>
-            </TableRow>
           </TableHeader>
+
           <TableBody>
+            <TableRow style={{tableLayout: 'auto'}}>
+              <TableRowColumn style={{textAlign: 'center'}}>ID</TableRowColumn>
+              <TableRowColumn style={{textAlign: 'center'}}>Quest</TableRowColumn>
+              <TableRowColumn style={{textAlign: 'center'}}>Description</TableRowColumn>
+              <TableRowColumn style={{textAlign: 'center'}}>Giver</TableRowColumn>
+              <TableRowColumn style={{textAlign: 'center'}}>Optional</TableRowColumn>
+            </TableRow>
             {tableData.mainQuest.map( (row, index) => (
               <TableRow key={index} selected={row.selected}>
                 <TableRowColumn>{index}</TableRowColumn>
@@ -40,6 +42,7 @@ class MainQuestTableComponent extends Component {
               </TableRow>
               ))}
           </TableBody>
+
         </Table>
       </div>
     );
