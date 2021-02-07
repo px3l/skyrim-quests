@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './../../logo.svg';
 import './App.css';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { Button, Paper } from '@material-ui/core';
 import QuestTable from '../QuestTable';
 
+import tableData from '../../TableData'
+
 function App() {
   return (
-    <Container maxWidth="sm" className="App">
+    <Container maxWidth="100%" className="App">
       <Paper>
-        <img src={logo} className="App-logo" alt="logo" />
         <Typography variant="h4" component="h1" gutterBottom>
-          Create React App + Material-UI
+          Skyrim 100% Completion Checklist
         </Typography>
         <QuestTable />
+        
         <Button variant="contained" color="primary">
-          Primary Button
+          Main Quest
         </Button>
+        
         <Button variant="contained" color="secondary">
-          Secondary Button
+          College of Winterhold
         </Button>
+
       </Paper>
     </Container>
   );

@@ -13,17 +13,17 @@ Structure is:
   type: 'type',
   link: 'link'
 },
-{
-  ID: 'ID',
-  name: 'name',
-  description: 'description',
-  giver: 'giver',
-  location: 'location',
-  level: 1,
-  reward: 'reward',
-  type: 'type',
-  link: 'link'
-},
+    {
+      ID: 'ID',
+      name: 'name',
+      description: 'description',
+      giver: 'giver',
+      location: 'location',
+      level: 1,
+      reward: 'reward',
+      type: 'type',
+      link: 'link'
+    },
 
 */
 
@@ -102,7 +102,7 @@ const tableData = {
       giver: 'Delphine',
       location: '   Sleeping Giant Inn, Kynesgrove',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:A_Blade_in_the_Dark'
     },
@@ -113,7 +113,7 @@ const tableData = {
       giver: 'Delphine',
       location: 'Riverwood, Solitude, Thalmor Embassy',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:Diplomatic_Immunity'
     },
@@ -124,7 +124,7 @@ const tableData = {
       giver: 'Delphine',
       location: 'Riften, The Ratway',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:A_Cornered_Rat'
     },
@@ -157,7 +157,7 @@ const tableData = {
       giver: 'Paarthurnax',
       location: 'Throat of the World, Sky Haven Temple or High Hrothgar, Septimus Signuss Outpost, Alftand, Blackreach, Tower of Mzark.',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:Elder_Knowledge'
     },
@@ -179,7 +179,7 @@ const tableData = {
       giver: 'Alduin',
       location: 'Throat of the World, High Hrothgar, and/or Sky Haven Temple, Dragonsreach',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:The_Fallen'
     },
@@ -199,7 +199,7 @@ const tableData = {
       name: 'Season Unending',
       description: 'Enforce a ceasefire to secure Dragonsreach.',
       giver: 'Jarl Balgruuf the Greater or Vignar Gray-Mane',
-      location: 'None',
+      location: '',
       level: 1,
       reward: 'Call Dragon Shout',
       type: 'optional',
@@ -223,7 +223,7 @@ const tableData = {
       giver: 'Automatic upon entering Sovngarde during The World-Eaters Eyrie.',
       location: 'Sovngarde',
       level: 1,
-      reward: 'None',
+      reward: '',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:Sovngarde_(quest)'
     },
@@ -237,6 +237,129 @@ const tableData = {
       reward: 'Call of Valor',
       type: 'main',
       link: 'https://en.uesp.net/wiki/Skyrim:Dragonslayer'
+    }
+  ],
+  collegeOfWinterhold: [
+    {
+      ID: 'MG01Pointer',
+      name: 'College Objective Quest',
+      description: 'Visit the College of Winterhold.',
+      giver: '',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: '',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:College_Objective_Quest'
+    },
+    {
+      ID: 'MG01',
+      name: 'First Lessons',
+      description: 'Join the College of Winterhold.',
+      giver: '',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Membership',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:First_Lessons'
+    },
+    {
+      ID: 'MG02',
+      name: 'Under Saarthal',
+      description: 'Uncover the mysteries beneath this ancient ruin.',
+      giver: 'Tolfdir',
+      location: 'Saarthal, College of Winterhold',
+      level: 1,
+      reward: 'Staff of Magelight',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:Under_Saarthal'
+    },
+    {
+      ID: 'MG03',
+      name: 'Hitting the Books',
+      description: 'Find the books needed to identify the artifact found in Saarthal.',
+      giver: 'Savos Aren',
+      location: 'Fellglow Keep',
+      level: 1,
+      reward: 'Skill books',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:Hitting_the_Books'
+    },
+    {
+      ID: 'MG04',
+      name: 'Good Intentions',
+      description: 'Find and consult the Augur of Dunlain.',
+      giver: 'Tolfdir',
+      location: '',
+      level: 1,
+      reward: 'Mages Circlet',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:Good_Intentions'
+    },
+    {
+      ID: 'MG06',
+      name: 'Revealing the Unseen',
+      description: 'Discover the location of Magnus staff.',
+      giver: 'Mirabelle Ervine',
+      location: 'College of Winterhold, Mzulft',
+      level: 1,
+      reward: '',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:Revealing_the_Unseen'
+    },
+    {
+      ID: 'MG05',
+      name: 'Containment',
+      description: 'Deal with the aftermath of the Eyes power surge.',
+      giver: '',
+      location: 'Winterhold',
+      level: 1,
+      reward: 'Savos Arens Amulet (+50 Magicka), Torc of Labyrinthian',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:Containment'
+    },
+    {
+      ID: 'MG07',
+      name: 'The Staff of Magnus',
+      description: 'Retrieve the Staff of Magnus.',
+      giver: 'Mirabelle Ervine',
+      location: 'Labyrinthian',
+      level: 1,
+      reward: 'Staff of Magnus, Morokei',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:The_Staff_of_Magnus'
+    },
+    {
+      ID: 'MG08',
+      name: 'The Eye of Magnus',
+      description: 'Reclaim the College and contain the Eye.',
+      giver: '',
+      location: '',
+      level: 1,
+      reward: 'Position of Arch-Mage in the College of Winterhold, Archmages Robes, key to the Arch-Mages Quarters.',
+      type: 'main',
+      link: 'https://en.uesp.net/wiki/Skyrim:The_Eye_of_Magnus'
+    },
+    {
+      ID: 'MGRArniel01, MGRArniel02, MGRArniel03, MGRArniel04',
+      name: 'Arniels Endeavor',
+      description: 'Uncover an ancient Dwemer secret.',
+      giver: 'Arniel Gane',
+      location: 'Part 1: College of Winterhold, Most Dwarven Ruins, Part 2: Radiant dungeon, Part 3: Various, Part 4: Radiant dungeon',
+      level: 1,
+      reward: 'Leveled gold, Keening, unique Conjuration spell, Summon Arniels Shade',
+      type: 'optional',
+      link: 'https://en.uesp.net/wiki/Skyrim:Arniel%27s_Endeavor'
+    },
+    {
+      ID: 'MGRAppBrelyna01',
+      name: 'Brelynas Practice',
+      description: 'Help Brelyna Maryon test spells.',
+      giver: 'Brelyna Maryon',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Resist Magic necklace',
+      type: 'optional',
+      link: 'https://www.google.com/url?q=https://en.uesp.net/wiki/Skyrim:Brelyna%27s_Practice&sa=D&source=editors&ust=1612703299110000&usg=AFQjCNGmCuwCgBO13kDvhHVU8hofl5PaSA'
     }
   ]
 }
