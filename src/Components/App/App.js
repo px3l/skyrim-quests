@@ -14,10 +14,15 @@ function App() {
         <Typography variant="h4" component="h1" gutterBottom>
           Skyrim 100% Completion Checklist
         </Typography>
-        <QuestTable />
+        <QuestTable
+          data = { tableData.mainQuest }
+        />
+        <QuestTable
+          data = { tableData.collegeOfWinterhold }
+        />
         
         <Button variant="contained" color="primary">
-          Main Quest
+          mainQuest
         </Button>
         
         <Button variant="contained" color="secondary">

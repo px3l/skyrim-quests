@@ -8,10 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import tableData from '../TableData'
-
-export default function BasicTable() {
-
+const TableComponent = ({
+  data,
+}) => {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
@@ -31,20 +30,20 @@ export default function BasicTable() {
         </TableHead>
         
         <TableBody>
-          {tableData.mainQuest.map( (row) => (
-              <TableRow selected={row.selected}>
-                <TableCell>{row.ID}</TableCell>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>{row.description}</TableCell>
-                <TableCell>{row.giver}</TableCell>
-                <TableCell>{row.location}</TableCell>
-                <TableCell>{row.level}</TableCell>
-                <TableCell>{row.reward}</TableCell>
-                <TableCell>{row.type}</TableCell>
-                <TableCell>{row.link}</TableCell>
-              </TableRow>
-              ))}
-          </TableBody>
+          {data.map( (row, i) => (
+            <TableRow key={ i }>
+              <TableCell>{row.ID}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.description}</TableCell>
+              <TableCell>{row.giver}</TableCell>
+              <TableCell>{row.location}</TableCell>
+              <TableCell>{row.level}</TableCell>
+              <TableCell>{row.reward}</TableCell>
+              <TableCell>{row.type}</TableCell>
+              <TableCell>{row.link}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
 
 
       </Table>
@@ -52,3 +51,5 @@ export default function BasicTable() {
   );
 }
 
+
+export default TableComponent
