@@ -14,6 +14,7 @@ function App() {
         <Typography variant="h4" component="h1" gutterBottom>
           Skyrim 100% Completion Checklist
         </Typography>
+
         <QuestTable
           data = { tableData.mainQuest }
         />

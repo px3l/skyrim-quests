@@ -7,17 +7,19 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Checkbox from '@material-ui/core/Checkbox';
 
 const TableComponent = ({
   data,
 }) => {
   return (
     <TableContainer component={Paper}>
-      <Table aria-label="simple table">
+      <Table aria-label="quest table">
 
         <TableHead>
           <TableRow>
             <TableCell>UID</TableCell>
+            <TableCell>Complete</TableCell>
             <TableCell>Name</TableCell>
             <TableCell>Description</TableCell>
             <TableCell>Giver</TableCell>
@@ -33,6 +35,7 @@ const TableComponent = ({
           {data.map( (row, i) => (
             <TableRow key={ i }>
               <TableCell>{row.ID}</TableCell>
+              <TableCell><Checkbox /></TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.description}</TableCell>
               <TableCell>{row.giver}</TableCell>
@@ -44,7 +47,6 @@ const TableComponent = ({
             </TableRow>
           ))}
         </TableBody>
-
 
       </Table>
     </TableContainer>
