@@ -100,7 +100,7 @@ const tableData = {
       name: 'A Blade in the Dark',
       description: 'Prove you are Dragonborn to Delphine by slaying the dragon Sahloknir.',
       giver: 'Delphine',
-      location: '   Sleeping Giant Inn, Kynesgrove',
+      location: 'Sleeping Giant Inn, Kynesgrove',
       level: 1,
       reward: '',
       type: 'main',
@@ -130,7 +130,7 @@ const tableData = {
     },
     {
       ID: 'MQ203',
-      name: 'Alduins Wall',
+      name: 'Alduin\'s Wall',
       description: 'Locate the prophecy within Sky Haven Temple.',
       giver: 'Esbern',
       location: 'The Ratway, Riverwood, Sky Haven Temple',
@@ -155,7 +155,7 @@ const tableData = {
       name: 'Elder Knowledge',
       description: 'Locate an Elder Scroll.',
       giver: 'Paarthurnax',
-      location: 'Throat of the World, Sky Haven Temple or High Hrothgar, Septimus Signuss Outpost, Alftand, Blackreach, Tower of Mzark.',
+      location: 'Throat of the World, Sky Haven Temple or High Hrothgar, Septimus Signus\'s Outpost, Alftand, Blackreach, Tower of Mzark.',
       level: 1,
       reward: '',
       type: 'main',
@@ -163,7 +163,7 @@ const tableData = {
     },
     {
       ID: 'MQ206',
-      name: 'Alduins Bane',
+      name: 'Alduin\'s Bane',
       description: 'Exploit the Time Wound to learn Dragonrend.',
       giver: 'Paarthurnax',
       location: 'Throat of the World',
@@ -175,7 +175,7 @@ const tableData = {
     {
       ID: 'MQ301',
       name: 'The Fallen',
-      description: 'Capture and interrogate one of Alduins allies.',
+      description: 'Capture and interrogate one of Alduin\'s allies.',
       giver: 'Alduin',
       location: 'Throat of the World, High Hrothgar, and/or Sky Haven Temple, Dragonsreach',
       level: 1,
@@ -207,8 +207,8 @@ const tableData = {
     },
     {
       ID: 'MQ303',
-      name: 'The World-Eaters Eyrie',
-      description: 'Battle through Skuldafn Temple to reach Alduins portal to Sovngarde.',
+      name: 'The World-Eater\'s Eyrie',
+      description: 'Battle through Skuldafn Temple to reach Alduin\'s portal to Sovngarde.',
       giver: 'Odahviing',
       location: 'Skuldafn Temple',
       level: 1,
@@ -298,7 +298,7 @@ const tableData = {
     {
       ID: 'MG06',
       name: 'Revealing the Unseen',
-      description: 'Discover the location of Magnus staff.',
+      description: 'Discover the location of Magnus\' staff.',
       giver: 'Mirabelle Ervine',
       location: 'College of Winterhold, Mzulft',
       level: 1,
@@ -341,7 +341,7 @@ const tableData = {
     },
     {
       ID: 'MGRArniel01, MGRArniel02, MGRArniel03, MGRArniel04',
-      name: 'Arniels Endeavor',
+      name: 'Arniel\'s Endeavor',
       description: 'Uncover an ancient Dwemer secret.',
       giver: 'Arniel Gane',
       location: 'Part 1: College of Winterhold, Most Dwarven Ruins, Part 2: Radiant dungeon, Part 3: Various, Part 4: Radiant dungeon',
@@ -352,15 +352,193 @@ const tableData = {
     },
     {
       ID: 'MGRAppBrelyna01',
-      name: 'Brelynas Practice',
+      name: 'Brelyna\'s Practice',
       description: 'Help Brelyna Maryon test spells.',
       giver: 'Brelyna Maryon',
       location: 'College of Winterhold',
       level: 1,
       reward: 'Resist Magic necklace',
       type: 'optional',
-      link: 'https://www.google.com/url?q=https://en.uesp.net/wiki/Skyrim:Brelyna%27s_Practice&sa=D&source=editors&ust=1612703299110000&usg=AFQjCNGmCuwCgBO13kDvhHVU8hofl5PaSA'
+      link: 'https://en.uesp.net/wiki/Skyrim:Brelyna\'s_Practice'
+    },
+    {
+      ID: 'MGRAppJzargo01',
+      name: 'J\'zargo\'s Experiment',
+      description: 'Help J\'zargo test out a fiery new spell.',
+      giver: 'J\'zargo',
+      location: '',
+      level: 1,
+      reward: 'J\'zargo as a follower, unused scrolls',
+      type: 'optional',
+      link: 'https://en.uesp.net/wiki/Skyrim:J%27zargo%27s_Experiment'
+    },
+    {
+      ID: 'MGRAppOnmund01',
+      name: 'Onmund\'s Request',
+      description: 'Help Onmund negotiate the return of a family amulet.',
+      giver: 'Onmund',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Onmund\'s friendship and availability as follower/spouse',
+      type: 'optional',
+      link: 'https://en.uesp.net/wiki/Skyrim:Onmund%27s_Request'
+    },
+    {
+      ID: 'MGR02',
+      name: 'Out of Balance',
+      description: 'Purify the focus points for magical energy around the College.',
+      giver: 'Drevis Neloren',
+      location: 'College of Winterhold, Hall of Attainment, Hall of Countenance',
+      level: 1,
+      reward: 'Soul gems, temporary Regenerate Magicka effect',
+      type: 'optional',
+      link: 'https://en.uesp.net/wiki/Skyrim:Out_of_Balance'
+    },
+    {
+      ID: 'MGRejoinQuest',
+      name: 'Rejoining the College',
+      description: 'Make amends for breaking the College of Winterhold rules.',
+      giver: '',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Reentry into the College',
+      type: 'optional',
+      link: 'https://en.uesp.net/wiki/Skyrim:Rejoining_the_College'
+    },
+    {
+      ID: 'MGR10',
+      name: 'Enchanting Pick-Up',
+      description: 'Sergius wants you to pick-up an item from a client for enchanting.',
+      giver: 'Sergius Turrianus',
+      location: '',
+      level: 1,
+      reward: 'Leveled gold',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Enchanting_Pick-Up'
+    },
+    {
+      ID: 'MGR11',
+      name: 'Restocking Soul Gems',
+      description: 'Help Sergius Turrianus to fill his stock with soul gems.',
+      giver: 'Sergius Turrianus',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Various amounts of gold',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Restocking_Soul_Gems'
+    },
+    {
+      ID: 'ID',
+      name: 'Tolfdir The Absent-Minded',
+      description: 'Help Tolfdir find his missing alembic.',
+      giver: 'Tolfdir',
+      location: '',
+      level: 1,
+      reward: '',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Tolfdir_The_Absent-Minded'
+    },
+    {
+      ID: 'MGR30',
+      name: 'Aftershock',
+      description: 'Put an end to the rupture caused by the Eye of Magnus.',
+      giver: 'Tolfdir',
+      location: 'College of Winterhold, Radiant location',
+      level: 1,
+      reward: 'Leveled gold',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Aftershock'
+    },
+    {
+      ID: 'MGR20, MGR20B',
+      name: 'Fetch me that Book!',
+      description: 'Fetch a book for Urag gro-Shub.',
+      giver: 'Urag gro-Shub',
+      location: 'The Arcanaeum',
+      level: 1,
+      reward: 'Small amount of leveled gold',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Fetch_me_that_Book!'
+    },
+    {
+      ID: 'MGR21',
+      name: 'Shalidor\'s Insights',
+      description: 'Discover the writings of Shalidor and benefit from his wisdom.',
+      giver: 'Urag gro-Shub',
+      location: 'The Arcanaeum, various dungeons',
+      level: 1,
+      reward: 'Three identical "Shalidor\'s Insights" scrolls or a magic skill boost',
+      type: 'radiant',
+      link: 'https://en.uesp.net/wiki/Skyrim:Shalidor%27s_Insights'
+    },
+    {
+      ID: 'MGRitual05',
+      name: 'Alteration Ritual Spell',
+      description: 'Find the Fang and use it to get Heartscales from a dragon.',
+      giver: 'Tolfdir',
+      location: 'College of Winterhold, random dungeon',
+      level: 1,
+      reward: 'Dragonhide spell tome, ability to purchase Master level Alteration Spells',
+      type: 'master skill',
+      link: 'https://en.uesp.net/wiki/Skyrim:Alteration_Ritual_Spell'
+    },
+    {
+      ID: 'MGRitual03',
+      name: 'Conjuration Ritual Spell',
+      description: 'Find a Sigil Stone by summoning a Daedra.',
+      giver: 'Phinis Gestor',
+      location: 'College of Winterhold - Hall of Attainment',
+      level: 1,
+      reward: 'Flame Thrall spell tome, ability to purchase Master level Conjuration spells, Sigil Stone',
+      type: 'master skill',
+      link: 'https://en.uesp.net/wiki/Skyrim:Conjuration_Ritual_Spell'
+    },
+    {
+      ID: 'MGRitual01',
+      name: 'Destruction Ritual Spell',
+      description: 'Learn the most powerful Destruction spells in Skyrim.',
+      giver: 'Faralda',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Fire Storm spell tome, ability to purchase Master level Destruction spells',
+      type: 'master skill',
+      link: 'https://en.uesp.net/wiki/Skyrim:Destruction_Ritual_Spell'
+    },
+    {
+      ID: 'MGRitual02',
+      name: 'Illusion Ritual Spell',
+      description: 'Find some books about Illusion Magic to learn Master Spells.',
+      giver: 'Drevis Neloren',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Hysteria spell tome, ability to purchase Master level Illusion spells',
+      type: 'master skill',
+      link: 'https://en.uesp.net/wiki/Skyrim:Illusion_Ritual_Spell'
+    },
+    {
+      ID: 'MGRitual04',
+      name: 'Restoration Ritual Spell',
+      description: 'Find the Augur of Dunlain and learn more about Restoration Magic.',
+      giver: 'Colette Marence',
+      location: 'College of Winterhold',
+      level: 1,
+      reward: 'Bane of the Undead, ability to purchase Master level Restoration spells and Master level Alteration spells, due to a bug.',
+      type: 'master skill',
+      link: 'https://en.uesp.net/wiki/Skyrim:Restoration_Ritual_Spell'
     }
+  ],
+  bardsCollege: [
+    {
+      ID: 'MS05',
+      name: 'Tending the Flames',
+      description: 'Unveil the truth about a King; become a member of Bards College.',
+      giver: 'Viarmo',
+      location: 'Bards College, Dead Men\'s Respite, Blue Palace',
+      level: 1,
+      reward: 'Leveled gold, Bards College membership',
+      type: 'side',
+      link: 'https://en.uesp.net/wiki/Skyrim:Tending_the_Flames'
+    },    
   ]
 }
 export default tableData
